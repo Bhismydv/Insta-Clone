@@ -92,8 +92,8 @@ public class RegisterActivity extends AppCompatActivity {
                             HashMap<String, Object> hashMap = new HashMap<String, Object>();
                             hashMap.put("id", userId);
                             hashMap.put("username", username.toLowerCase());
-                            hashMap.put("Full Name", fullName);
-                            hashMap.put("Bio", "");
+                            hashMap.put("fullname", fullName);
+                            hashMap.put("bio", "");
                             hashMap.put("imageurl", "https://firebasestorage.googleapis.com/v0/b/insta-d9274.appspot.com/o/placeholder.png?alt=media&token=12387951-7b10-4d59-9e25-461055817f2c");
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
